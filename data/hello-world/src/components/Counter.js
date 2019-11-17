@@ -16,11 +16,12 @@ export class Counter extends Component {
         //         console.log('Callback, synchronus', this.state.count)
         //     }
         // )
+        // Synchronous way, so this is how we will end up using
         this.setState((prevState) => ({
             count: prevState.count + 1
         }))
         // this is called asynchrosly
-        console.log(this.state.count);
+        // console.log(this.state.count);
     }
     incrementFive() {
         // All are parallel :( good for FE, not sure for backup
