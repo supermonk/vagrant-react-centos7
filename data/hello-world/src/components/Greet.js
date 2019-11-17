@@ -10,11 +10,12 @@ const Greet = (props) => {
         <div>
             <h1> {props.name} hero is {props.heroName}
             </h1>
-            {props.children}
+            {props.children}  
         </div>)
 
 }
 
+// props.children is not clean
 export default Greet;
 
 

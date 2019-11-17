@@ -2,7 +2,7 @@ import React from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import Greet from './components/Greet'
-// import Welcome from './components/Welcome'
+import Welcome from './components/Welcome'; 
 // import Hello from './components/Hello'
 
 function App() {
@@ -15,6 +15,8 @@ function App() {
         <button> Action</button>
       </Greet>
       <Greet name="Bow" heroName="Wonderwoman"></Greet>
+      <Welcome name="Narendra" heroName="Batman"></Welcome>
+      <Welcome name="Superman" heroName="Superman"></Welcome>
     </div>
   );
 }
