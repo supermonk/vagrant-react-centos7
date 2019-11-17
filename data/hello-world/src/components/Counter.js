@@ -17,7 +17,7 @@ export class Counter extends Component {
         //     }
         // )
         // Synchronous way, so this is how we will end up using
-        this.setState((prevState) => ({
+        this.setState((prevState,props) => ({
             count: prevState.count + 1
         }))
         // this is called asynchrosly

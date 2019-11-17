@@ -4,16 +4,43 @@ import React from 'react'
 //     return <h1> Hello Narendra</h1>
 // }
 
-const Greet = (props) => {
-    console.log(props);
+// const Greet = (props) => {
+//     console.log(props);
+//     return (
+//         <div>
+//             <h1> {props.name} hero is {props.heroName}
+//             </h1>
+//             {props.children}  
+//         </div>)
+
+// }
+
+// Funtional way- Parameter,
+// const Greet = ({ name, heroName, children }) => {
+//     return (
+//         <div>
+//             <h1> {name} hero is {heroName}
+//             </h1>
+//             {children}
+//         </div>)
+
+// }
+
+
+// Funtional way- Body,
+
+const Greet = props => {
+    const { name, heroName, children } = props
     return (
         <div>
-            <h1> {props.name} hero is {props.heroName}
+            <h1> {name} hero is {heroName}
             </h1>
-            {props.children}  
+            {children}
         </div>)
 
 }
+
+
 
 // props.children is not clean
 export default Greet;
