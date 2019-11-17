@@ -4,7 +4,10 @@ import React, { Component } from 'react'
 
 class Welcome extends Component {
     render() {
-        return <h1> Class Component- Welcome {this.props.name} hero is {this.props.heroName}</h1>
+        const { name, heroName } = this.props
+        // intresting
+        // const {state1, state2} = this.state
+        return <h1> Class Component- Welcome {name} hero is {heroName}</h1>
     }
 }
 
