@@ -8,8 +8,12 @@ import Greet from './components/Greet'
 function App() {
   return (
     <div className="App">
-      <Greet name="Narendra" heroName="Batman"></Greet>
-      <Greet name= "Superman" heroName="Superman"></Greet>
+      <Greet name="Narendra" heroName="Batman">
+        <p> This is children props</p>
+      </Greet>
+      <Greet name="Superman" heroName="Superman">
+        <button> Action</button>
+      </Greet>
       <Greet name="Bow" heroName="Wonderwoman"></Greet>
     </div>
   );
