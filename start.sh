@@ -1,4 +1,3 @@
-rm -rf data
 mkdir data
 cp Scripts/backup Vagrantfile
 cp -R Scripts/* data/
