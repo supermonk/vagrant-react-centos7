@@ -4,8 +4,7 @@ yum install -y nodejs
 cd react-http
 sudo npm install -g --force npm@latest yarn@latest react@latest typescript@latest npx@latest axios@latest fsevents@latest core-js@latest left-pad@latest webpack@latest
 npm cache clean --force
-yarn add axios  
-#rm -rf /vagrant_data/hello-world
+yarn add axios   
 #npx create-react-app hello-world
 #echo "CHOKIDAR_USEPOLLING=true" > /vagrant_data/hello-world/.env
 #chmod 777 /vagrant_data/hello-world/.env
