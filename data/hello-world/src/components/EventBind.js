@@ -12,13 +12,14 @@ class EventBind extends Component {
     }
     // this keyword undefined in Event Bind
     // hence binding is required.
+    // First 3 ways.
     // clickHandler() {
     //     this.setState({
     //         message: 'GoodBye !'
     //     })
     //     console.log(this)
     // }
-    // Property way
+    // Property way, Last way
     clickHandler = () => {
         this.setState({
             message: 'GoodBye !'
