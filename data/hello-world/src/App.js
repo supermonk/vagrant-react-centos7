@@ -7,6 +7,7 @@ import Welcome from './components/Welcome';
 import Counter from './components/Counter'
 import FunctionClick from './components/FunctionClick';
 import ClassClick from './components/ClassClick';
+import EventBind from './components/EventBind';
 
 
 function App() {
@@ -24,8 +25,9 @@ function App() {
       {/* <Message></Message> 
       <Counter></Counter> */}
       {/* <Welcome name="Narendra" heroName="Batman"></Welcome> */}
-      <FunctionClick></FunctionClick>
-      <ClassClick></ClassClick>
+      {/* <FunctionClick></FunctionClick>
+      <ClassClick></ClassClick> */}
+      <EventBind></EventBind>
     </div>
   );
 }
