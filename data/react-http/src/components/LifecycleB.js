@@ -17,6 +17,20 @@ static getDerivedStateFromProps(props,state){
     return null;
 }
 
+shouldComponentUpdate(){
+    console.log('LifecycleB shouldComponentUpdate')
+    return true;
+}
+
+getSnapshotBeforeUpdate(){
+    console.log('LifecycleB getSnapshotBeforeUpdate');
+    return null;
+}
+
+componentDidUpdate(){
+    console.log('LifecycleB componentDidUpdate')
+}
+
 componentDidMount(){
     console.log('LifecycleB componentDidMount');
 }
