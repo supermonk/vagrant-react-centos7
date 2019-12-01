@@ -1,10 +1,13 @@
 import React from 'react';
 import './App.css';
-import Table from './components/Table';
+import PureComp from './components/PureComp';
+import ParentComp from './components/ParentComp';
+// import Table from './components/Table';
 // import PostList from './components/PostList';
 // import PostForm from './components/PostForm';
 // import LifecycleA from './components/LifecycleA';
 // import FragmentDemo from './components/FragmentDemo';
+
 
 
 function App() {
@@ -14,7 +17,8 @@ function App() {
       {/* <PostForm></PostForm> */}
       {/* <LifecycleA></LifecycleA> */}
       {/* <FragmentDemo></FragmentDemo> */}
-      <Table></Table>
+      {/* <Table></Table> */}
+      <ParentComp></ParentComp>
     </div>
   );
 }
