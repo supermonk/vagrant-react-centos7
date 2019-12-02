@@ -33,13 +33,17 @@ function App() {
 
       {/* reference to function */}
       {/* <User name={(isLoggedIn) => isLoggedIn ? 'narendra' : 'Guest'}></User> */}
-      <Counter render={(count, incrementCount) =>
-        (<ClickCounterTwo count={count} incrementCount={incrementCount}></ClickCounterTwo>
-        )}></Counter>
+      <Counter>
+        {(count, incrementCount) =>
+          <ClickCounterTwo count={count} incrementCount={incrementCount}></ClickCounterTwo>
+        }
+      </Counter>
 
-      <Counter render={(count, incrementCount) =>
-        (<HoverComponentTwo count={count} incrementCount={incrementCount}></HoverComponentTwo>
-        )}></Counter>
+      <Counter>
+        {(count, incrementCount) =>
+          <HoverComponentTwo count={count} incrementCount={incrementCount}></HoverComponentTwo>
+        }
+      </Counter>
 
 
     </div>
