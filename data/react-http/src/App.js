@@ -2,7 +2,8 @@ import React from 'react';
 import './App.css';
 import ClickCounterTwo from './components/ClickCounterTwo';
 import HoverComponentTwo from './components/HoverComponentTwo';
-import User from './components/User';
+// import User from './components/User';
+import Counter from './components/Counter';
 // import PureComp from './components/PureComp';
 // import ParentComp from './components/ParentComp';
 // import ClickCounter from './components/ClickCounter';
@@ -26,12 +27,21 @@ function App() {
       {/* <ParentComp></ParentComp> */}
       {/* <ClickCounter name = 'narendra'></ClickCounter> */}
       {/* <HoverCounter></HoverCounter> */}
-      <ClickCounterTwo></ClickCounterTwo>
-      <HoverComponentTwo></HoverComponentTwo>
+      {/* <ClickCounterTwo></ClickCounterTwo>
+      <HoverComponentTwo></HoverComponentTwo> */}
       {/* <User name = "narendra"></User> */}
 
       {/* reference to function */}
-      <User name={(isLoggedIn) => isLoggedIn ? 'narendra' : 'Guest'}></User>
+      {/* <User name={(isLoggedIn) => isLoggedIn ? 'narendra' : 'Guest'}></User> */}
+      <Counter render={(count, incrementCount) =>
+        (<ClickCounterTwo count={count} incrementCount={incrementCount}></ClickCounterTwo>
+        )}></Counter>
+
+      <Counter render={(count, incrementCount) =>
+        (<HoverComponentTwo count={count} incrementCount={incrementCount}></HoverComponentTwo>
+        )}></Counter>
+
+
     </div>
   );
 }
