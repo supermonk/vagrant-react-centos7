@@ -1,9 +1,11 @@
 import React from 'react';
 import './App.css';
+import ClickCounterTwo from './components/ClickCounterTwo';
+import HoverComponentTwo from './components/HoverComponentTwo';
 // import PureComp from './components/PureComp';
 // import ParentComp from './components/ParentComp';
-import ClickCounter from './components/ClickCounter';
-import HoverCounter from './components/HoverCounter';
+// import ClickCounter from './components/ClickCounter';
+// import HoverCounter from './components/HoverCounter';
 // import Table from './components/Table';
 // import PostList from './components/PostList';
 // import PostForm from './components/PostForm';
@@ -21,8 +23,10 @@ function App() {
       {/* <FragmentDemo></FragmentDemo> */}
       {/* <Table></Table> */}
       {/* <ParentComp></ParentComp> */}
-      <ClickCounter name = 'narendra'></ClickCounter>
-      <HoverCounter></HoverCounter>
+      {/* <ClickCounter name = 'narendra'></ClickCounter> */}
+      {/* <HoverCounter></HoverCounter> */}
+      <ClickCounterTwo></ClickCounterTwo>
+      <HoverComponentTwo></HoverComponentTwo>
     </div>
   );
 }
