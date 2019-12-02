@@ -21,7 +21,7 @@ function App() {
       {/* <FragmentDemo></FragmentDemo> */}
       {/* <Table></Table> */}
       {/* <ParentComp></ParentComp> */}
-      <ClickCounter></ClickCounter>
+      <ClickCounter name = 'narendra'></ClickCounter>
       <HoverCounter></HoverCounter>
     </div>
   );
