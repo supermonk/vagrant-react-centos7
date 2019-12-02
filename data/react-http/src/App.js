@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import ClickCounterTwo from './components/ClickCounterTwo';
 import HoverComponentTwo from './components/HoverComponentTwo';
+import User from './components/User';
 // import PureComp from './components/PureComp';
 // import ParentComp from './components/ParentComp';
 // import ClickCounter from './components/ClickCounter';
@@ -27,6 +28,10 @@ function App() {
       {/* <HoverCounter></HoverCounter> */}
       <ClickCounterTwo></ClickCounterTwo>
       <HoverComponentTwo></HoverComponentTwo>
+      {/* <User name = "narendra"></User> */}
+
+      {/* reference to function */}
+      <User name={(isLoggedIn) => isLoggedIn ? 'narendra' : 'Guest'}></User>
     </div>
   );
 }
